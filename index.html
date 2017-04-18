@@ -389,7 +389,7 @@ eventbrite:                       # optional: alphanumeric key for Eventbrite re
               Type the following lines into the command prompt window one at a time exactly as shown, hitting [Enter]
           after each one.
           <pre>
-conda create -n bash m2-base git jupyter tornado=4.4
+conda create -n bash m2-base git jupyter pandas tornado=4.4 console_shortcut
 
 activate bash
 
@@ -401,15 +401,14 @@ conda install -c swc nano</pre>
         </li>
 
         <li>
-          Set your "HOME" environment variable by typing the following line into the command
-          prompt window exactly as shown:
-<pre>setx HOME "%USERPROFILE%"</pre>
+          You should now be able to find a new folder in your Start menu called 'Anaconda'. Inside the folder will
+          be two 'Anaconda Prompt' programs. Choose the one that doesn't say '(bash)'
           </li>
-
-        Press [Enter], you should see:<p><code>SUCCESS: Specified value was saved.</code></p>
-
-        <li>Quit command prompt by typing <code>exit</code> then pressing [Enter]</li>
+        <li>Activate the correct conda environment by typing:
+        <pre>activate bash</pre>
+        </li>
       </ol>
+      <br/>Optionally, <a href="http://cmder.net/">Cmder</a> is a (much) nicer terminal environment for Windows.
     </div>
     <div class="col-md-4">
       <h4 id="shell-macosx">Mac OS X</h4>
@@ -419,7 +418,7 @@ conda install -c swc nano</pre>
       <ol>
         <li>Open the Terminal (found in <code>/Applications/Utilities</code>).</li>
         <li>Type the following into the command prompt window exactly as shown:
-          <pre>conda install git jupyter</pre></li>
+          <pre>conda install git jupyter pandas</pre></li>
       </ol>
         <br/>Optionally, <a href="https://www.iterm2.com/">iTerm2</a> is a more feature-rich terminal environment that is
         a little easier on the eyes.
@@ -433,7 +432,7 @@ conda install -c swc nano</pre>
       <ol>
         <li>Open the Terminal</li>
         <li>Type the following into the command prompt window exactly as shown:
-          <pre>conda install git jupyter</pre></li>
+          <pre>conda install git jupyter pandas</pre></li>
       </ol>
     </div>
   </div>
@@ -472,9 +471,10 @@ conda install -c swc nano</pre>
     <div class="col-md-4">
       <h4 id="editor-cross">Cross Platform</h4>
         <ul>
-            <li><a href="https://www.jetbrains.com/pycharm/">PyCharm Community Edition</a></li>
-            <li><a href="https://atom.io/">Atom</a></li>
-            <li><a href="http://www.sublimetext.com/">Sublime Text</a>
+          <li><a href="https://www.jetbrains.com/pycharm/">PyCharm Community Edition</a></li>
+          <li><a href="https://code.visualstudio.com/">VS Code</a></li>
+          <li><a href="https://atom.io/">Atom</a></li>
+          <li><a href="http://www.sublimetext.com/">Sublime Text</a>
         </ul>
     </div>
     <div class="col-md-4">
